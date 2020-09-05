@@ -1,0 +1,63 @@
+﻿@model IEnumerable<AccessDatabaseWebApp.Models.Mymsy1Model>
+
+@{
+    ViewData["Title"] = "Results";
+}
+
+<h1>Results</h1>
+
+<p>
+    <a asp-action="Index">Back to Search</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Sorts)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.objname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.objtype)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Key1)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @using (Html.BeginForm("Documents", "Home", FormMethod.Post))
+        {
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Sorts)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.objname)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Description)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.objtype)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Key1)
+                    </td>
+                    <td>
+                        <input type="radio" name="objname" value="@item.objname"/>
+                        <input type="submit" id="submit" value="Display" />
+                        @*@Html.ActionLink("Display", "Documents", new { /* id=item.PrimaryKey */ })*@
+                    </td>
+                </tr>
+                }
+            }
+    </tbody>
+</table>

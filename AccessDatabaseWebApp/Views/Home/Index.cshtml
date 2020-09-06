@@ -4,17 +4,15 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Microsoft Access Database Search Tool</h1>
+    <p>Search through the Mmsys database by object type and title below!</p>
 </div>
 
-<div>
-
+<div style="text-align: center">
     <form method="POST" asp-controller="Home" asp-action="Results">
-        @Html.DropDownList("objtype", new SelectList(Model.Select(m => m.objtype)), "Select All Types")
+        @Html.DropDownList("objtype", new SelectList(Model.Select(m => m.objtype)), "Select All Types") 
         @Html.TextBox("title", "")
         <input type="submit" id="submit" value="Search" />
     </form>
-
 </div>
 

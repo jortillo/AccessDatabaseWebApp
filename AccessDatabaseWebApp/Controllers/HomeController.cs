@@ -50,11 +50,11 @@ namespace AccessDatabaseWebApp.Controllers
                 if(!type.Equals(""))
                 {
                     result = connection.Query<Mymsy1Model>("Select * From MIMSY1 Where objtype LIKE '" + type + "'" +
-                        "AND objname LIKE '%" + title +"%' LIMIT 999").ToList();
+                        "AND objname LIKE '%" + title +"%' LIMIT 4000").ToList();
                 }
                 else
                 {
-                    result = connection.Query<Mymsy1Model>("Select * From MIMSY1 Where objname LIKE '%" + title + "%' LIMIT 999").ToList();
+                    result = connection.Query<Mymsy1Model>("Select * From MIMSY1 Where objname LIKE '%" + title + "%' LIMIT 4000").ToList();
                 }
    
             }
@@ -72,7 +72,7 @@ namespace AccessDatabaseWebApp.Controllers
                 result = connection.Query<DocumentsModel>("SELECT DOCUMENTS.Document_Name, DOCUMENTS.DateCreated, MIMSY1.[counter], MIMSY1.objtype, MIMSY1.objname, " +
                     "MIMSY1.description, MIMSY1.location1, MIMSY1.Sort1, MIMSY1.Sort2, MIMSY1.Sorts, MIMSY1.ytdcounter, MIMSY1.itemcount, MIMSY1.maker, MIMSY1.objclass1, MIMSY1.checkedout, MIMSY1.lost, " +
                     "MIMSY1.objdate,MIMSY1.acqsource, MIMSY1.acqmethod, MIMSY1.acqdate, MIMSY1.objstatus, MIMSY1.location2, MIMSY1.Key1 FROM(MIMSY1 INNER JOIN DOCUMENTS ON MIMSY1.[counter] = DOCUMENTS.[counter])" +
-                    "Where objname LIKE '" + type + "' LIMIT 999").ToList();
+                    "Where objname LIKE '" + type + "' LIMIT 4000").ToList();
             }
             return View(result);
         }

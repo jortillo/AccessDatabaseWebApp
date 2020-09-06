@@ -17,5 +17,6 @@ namespace AccessDatabaseWebApp.Models
         [Display(Name = "Object Type")]
         public String objtype { get; set; }
         public String Key1 { get; set; }
+
     }
 }

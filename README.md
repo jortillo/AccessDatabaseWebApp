@@ -18,7 +18,7 @@
 
 ## Search Tool
 ![Search](READMEImages/Search.gif)
-Database contains list of records and related database. User can search through database by object type and title.
+Database contains list of records and related documents. User can search through database by object type and title.
 
 ## Results
 ![Results](READMEImages/Results.gif)

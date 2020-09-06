@@ -1,5 +1,5 @@
 # AccessDatabaseWebApp
- ASP.NET CORE MVC Web Application thats connected to and searches a local database. Orginally used a Microsoft Access DB, but converted it to SQLite for support on Microsoft Azure. This project was used as an opportunity to learn ASP.NET Core 3.1, the MVC architecture, C# and deploying to Microsoft Azure with 0 knowledge.
+ ASP.NET Core Web Application thats connected to and searches a local database. Orginally used a Microsoft Access DB, but converted it to SQLite for support on Microsoft Azure. This project was used as an opportunity to learn ASP.NET Core 3.1, the MVC architecture, C# and deploying to Microsoft Azure with 0 knowledge.
  
  # Tools Used
  - Visual Studio 2019

@@ -49,7 +49,7 @@ namespace AccessDatabaseWebApp
             app.UseRouting();
 
             app.UseAuthorization();
-
+            //app.UseDeveloperExceptionPage();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(

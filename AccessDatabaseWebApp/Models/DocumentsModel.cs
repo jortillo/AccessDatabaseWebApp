@@ -11,7 +11,7 @@ namespace AccessDatabaseWebApp.Models
     {
         
         [Display(Name = "Document Name")]
-        public String DocumentName { get; set; }
+        public String Document_Name { get; set; }
         [Display(Name = "Date Created")]
         public String DateCreated { get; set; }
         public String Counter { get; set; }

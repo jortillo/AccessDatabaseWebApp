@@ -15,3 +15,9 @@
  - [ASP.NET Core Documentation](https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-3.1)
 
  ## [Live Demo](https://accessdatabasewebappdemo.azurewebsites.net/)
+
+![Search](READMEImages/Search.gif)
+Database contains list of records and related database. User can search through database by object type and title.
+
+![Results](READMEImages/Results.gif)
+After conducting a search, a list of records are displayed based on search requirements. Pressing the checkbox and display button for a record will display full records and a list of related documents to that record.
